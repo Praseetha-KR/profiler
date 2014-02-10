@@ -1,0 +1,18 @@
+{
+	"name": "profiler",
+	"version": "1.0.0",
+	"description": "Test app with AngularJS",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Praseetha-KR/profiler.git"
+	},
+	"ignore": [
+		".jshintrc"
+	],
+	"dependencies": {
+		"bootstrap": "3.0.0",
+		"modernizr": "*",
+		"angular": "*"
+	},
+	"devDependencies": {}
+}
