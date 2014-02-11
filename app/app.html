@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-ng-app="demoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Profilr</title>
+</head>
+<body>
+	<div data-ng-view=""></div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	<script>
+		var demoApp = angular.module('demoApp', []);
+
+		demoApp.config(function ($routeProvider){
+			$routeProvider
+				.when('/',
+					{
+						controller: 'SimpleController',
+						templateUrl: 'partials/view1.html'
+					})
+				.when('/view2',
+					{
+						controller: 'SimpleController',
+						templateUrl: 'partials/view2.html'
+					})
+				.otherwise({ redirectTo: '/' });
+		});
+
+		demoApp.controller('SimpleController', function ($scope){
+			$scope.users = [
+				{ name:'Harry', city:'San Fransisco'},
+				{ name:'Hermione', city:'New York'},
+				{ name:'Ron', city:'Atlanta'}
+			];
+			$scope.addUser = function() {
+				$scope.users.push(
+				{
+					name: $scope.newUser.name,
+					city: $scope.newUser.city
+				});
+			}
+		});
+	</script>
+</body>
+</html>
