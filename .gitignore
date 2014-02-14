@@ -1,2 +1,6 @@
-.DS_Store
-.sass-cache
+*.sw*
+*~
+build/
+bin/
+node_modules/
+vendor/

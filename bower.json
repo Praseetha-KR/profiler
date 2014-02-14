@@ -1,18 +1,13 @@
 {
-	"name": "profiler",
-	"version": "1.0.0",
-	"description": "Test app with AngularJS",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/Praseetha-KR/profiler.git"
-	},
-	"ignore": [
-		".jshintrc"
-	],
-	"dependencies": {
-		"bootstrap": "3.0.0",
-		"modernizr": "*",
-		"angular": "*"
-	},
-	"devDependencies": {}
+  "name": "ng-boilerplate",
+  "version": "0.3.1",
+  "devDependencies": {
+    "angular": "~1.0.7",
+    "angular-mocks": "~1.0.7",
+    "bootstrap": "~2.3.2",
+    "angular-bootstrap": "~0.3.0",
+    "angular-ui-router": "~0.0.1",
+    "angular-ui-utils": "~0.0.3"
+  },
+  "dependencies": {}
 }
