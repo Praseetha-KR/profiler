@@ -4,7 +4,9 @@
   "dependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-compass": "0.6.x",
-    "grunt-contrib-watch": "0.5.x"
+    "grunt-contrib-watch": "0.5.x",
+    "grunt-concurrent": "0.4.x",
+    "grunt-web-server": "*"
   },
   "repository": {
     "type": "git",
@@ -13,5 +15,8 @@
   "author": "Praseetha KR",
   "bugs": {
     "url": "https://github.com/Praseetha-KR/profiler/issues"
+  },
+  "devDependencies": {
+    "grunt-web-server": "^1.2.3"
   }
 }

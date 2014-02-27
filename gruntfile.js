@@ -2,10 +2,27 @@
 
 module.exports = function(grunt) {
 	grunt.initConfig({
+		web_server: {
+			options: {
+				cors: true,
+				port: 8000,
+				nevercache: true,
+				logRequests: true
+			},
+			foo: 'bar'
+		},
 		compass: {
 			dist: {
 				options: {
 					config: 'config.rb'
+				}
+			}
+		},
+		concurrent: {
+			target: {
+				tasks: ['compass', 'web_server', 'watch'],
+				options: {
+					logCurrentOutput: true
 				}
 			}
 		},
@@ -18,8 +35,11 @@ module.exports = function(grunt) {
 			}
 		}
 	});
+
+	grunt.loadNpmTasks('grunt-web-server');
+	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['compass']);
+	grunt.registerTask('default', ['concurrent:target']);
 };
