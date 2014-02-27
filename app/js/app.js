@@ -11,6 +11,6 @@ angular.module('profilerApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/user/:username', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/search', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.otherwise({redirectTo: '/search'});
+  $routeProvider.when('/', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

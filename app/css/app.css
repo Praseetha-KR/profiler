@@ -1,9 +1,20 @@
-/* line 3, ../sass/app.sass */
 body {
-  background: #cccccc;
+  background: #2d3339;
+  color: #efefef;
 }
 
-/* line 6, ../sass/app.sass */
+.clearall {
+  clear: both;
+}
+
+.white {
+  color: white !important;
+}
+
+.link-silent {
+  text-decoration: none !important;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -11,29 +22,63 @@ body {
   padding: 0 0 0.5em;
 }
 
-/* line 12, ../sass/app.sass */
 .menu:before {
   content: "[";
 }
 
-/* line 15, ../sass/app.sass */
 .menu:after {
   content: "]";
 }
 
-/* line 18, ../sass/app.sass */
 .menu > li {
   display: inline;
 }
 
-/* line 21, ../sass/app.sass */
 .menu > li:before {
   content: "|";
   padding-right: 0.3em;
 }
 
-/* line 25, ../sass/app.sass */
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.ghcontent {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  font-size: 1.5em;
+  color: #d5d7d8;
+}
+.ghcontent img {
+  width: 90%;
+  height: auto;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.repolist {
+  display: inline-block;
+  float: left;
+  width: 70%;
+}
+.repolist ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.repolist ul li {
+  list-style-type: none;
+}
+.repolist ul li a {
+  background: #384047;
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #edeff0;
+  border-radius: 3px;
+}
+
+.smallname a {
+  text-decoration: none;
 }

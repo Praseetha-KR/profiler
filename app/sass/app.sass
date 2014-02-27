@@ -1,7 +1,15 @@
 @import "compass"
 
 body
-  background: #CCC
+  background: #2D3339
+  color: #EFEFEF
+
+.clearall
+  clear: both
+.white
+  color: #FFF !important
+.link-silent
+  text-decoration: none !important
 
 .menu
   list-style: none
@@ -25,3 +33,35 @@ body
 .menu > li:nth-child(1):before
   content: ""
   padding: 0
+
+
+.ghcontent
+  display: inline-block
+  float: left
+  width: 30%
+  font-size: 1.5em
+  color: #D5D7D8
+  img
+    width: 90%
+    height: auto
+    border: 10px solid rgba(0,0,0,0.2)
+.repolist
+  display: inline-block
+  float: left
+  width: 70%
+  ul
+    margin-left: 0
+    padding-left: 0
+    li
+      list-style-type: none
+      a
+        background: #384047
+        padding: 0.5em
+        display: block
+        text-decoration: none
+        font-size: 1.2em
+        color: #EDEFF0
+        border-radius: 3px
+.smallname
+  a
+    text-decoration: none
