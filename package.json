@@ -1,0 +1,17 @@
+{
+  "name": "profiler",
+  "description": "A test project with AngularJS",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "0.6.x",
+    "grunt-contrib-watch": "0.5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Praseetha-KR/profiler.git"
+  },
+  "author": "Praseetha KR",
+  "bugs": {
+    "url": "https://github.com/Praseetha-KR/profiler/issues"
+  }
+}

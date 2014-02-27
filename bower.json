@@ -1,0 +1,14 @@
+{
+	"name": "profiler",
+	"version": "0.0.1",
+	"ignore": [
+		"**/*.txt"
+	],
+	"dependencies": {
+		"bootstrap": "3.0.0",
+		"modernizr": "*",
+		"angular": "*",
+		"angular-route": "*"
+	},
+	"devDependencies": {}
+}

@@ -1,0 +1,39 @@
+/* line 3, ../sass/app.sass */
+body {
+  background: #cccccc;
+}
+
+/* line 6, ../sass/app.sass */
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+/* line 12, ../sass/app.sass */
+.menu:before {
+  content: "[";
+}
+
+/* line 15, ../sass/app.sass */
+.menu:after {
+  content: "]";
+}
+
+/* line 18, ../sass/app.sass */
+.menu > li {
+  display: inline;
+}
+
+/* line 21, ../sass/app.sass */
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+/* line 25, ../sass/app.sass */
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
