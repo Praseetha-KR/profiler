@@ -1,6 +1,4 @@
 .DS_Store
-*.sw*
-*~
 node_modules/
 lib/
 .sass-cache
