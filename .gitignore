@@ -1,8 +1,5 @@
 .DS_Store
 *.sw*
 *~
-build/
-node_modules/
-lib/
 .sass-cache
 
