@@ -18,5 +18,9 @@
   },
   "devDependencies": {
     "grunt-web-server": "^1.2.3"
-  }
+  },
+  "scripts": {
+        "start": "grunt",
+        "postinstall": "bower install"
+    }
 }
