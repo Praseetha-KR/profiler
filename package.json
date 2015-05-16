@@ -1,12 +1,13 @@
 {
   "name": "profiler",
   "description": "A test project with AngularJS",
+  "engines": {
+    "node": "0.12.2",
+    "npm": "2.7.4"
+  },
   "dependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-compass": "0.6.x",
-    "grunt-contrib-watch": "0.5.x",
-    "grunt-concurrent": "0.4.x",
-    "grunt-web-server": "*"
+    "bower": "*",
+    "grunt-cli": "*",
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
     "url": "https://github.com/Praseetha-KR/profiler/issues"
   },
   "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "0.6.x",
+    "grunt-contrib-watch": "0.5.x",
+    "grunt-concurrent": "0.4.x",
     "grunt-web-server": "^1.2.3"
   },
   "scripts": {
