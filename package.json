@@ -10,8 +10,8 @@
     "url": "https://github.com/Praseetha-KR/profiler/issues"
   },
   "engines": {
-    "node": ">=0.12.2",
-    "npm": ">=2.7.4"
+    "node": "~0.12.2",
+    "npm": "~2.7.4"
   },
   "dependencies": {
     "bower": "~1.4.1",
